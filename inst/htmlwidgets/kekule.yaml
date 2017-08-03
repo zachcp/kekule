@@ -1,0 +1,15 @@
+# (uncomment to add a dependency)
+# dependencies:
+#  - name:
+#    version:
+#    src:
+#    script:
+#    stylesheet:
+
+dependencies:
+ - name: kekule
+   version: 7.5.170624
+   src: "htmlwidgets/lib/kekule"
+   script: kekule.min.js
+   stylesheet: themes/default/chemWidget.css
+
