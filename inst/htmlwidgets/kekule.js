@@ -12,12 +12,9 @@ HTMLWidgets.widget({
 
       renderValue: function(x) {
 
-        // TODO: code to render the widget, e.g.
-        el.innerText = x.message;
 
     // sketcher-id is defined in the widget def
-    var sketchnode = document.getElementById(el.id)
-    var sketcher   = new Kekule.ChemWidget.Editor.Composer(sketchnode);
+    var sketcher   = new Kekule.ChemWidget.Editor.Composer(el);
     var mol        = widg.getChemObj().standardize();
     var writer     = Kekule.IO.ChemDataWriterManager.getWriterByFormat("smi", null, mol);
     var data       = writer.writeData(mol, "text", "smi");

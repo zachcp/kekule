@@ -23,13 +23,7 @@ kekule <- function(message, width = NULL, height = NULL, elementId = NULL) {
   )
 }
 
-#' @import htmltools
-kekule_html <- function(id, style, class, width, height, ...) {
-  list(tags$div(id = id, class = class, style = style),
-       tags$div(id = sprintf("%s-sketcher", id),
-                style=sprintf("width:%s", width),
-                class = sprintf("%s-sketcher", class)))
-}
+
 
 #' Shiny bindings for kekule
 #'
